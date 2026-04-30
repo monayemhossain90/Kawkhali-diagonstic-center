@@ -13,6 +13,7 @@ const Login = () => {
     const {
         register,
         handleSubmit,
+        setValue,   
         formState: { errors },
     } = useForm();
 
@@ -22,7 +23,12 @@ const Login = () => {
         // console.log(data);
         dispatch(SetLoginError(""));
         login(data);
-    }
+    };
+
+    const fillDummyCredentials = () => {
+    setValue("email", "dummyadmin@gmail.com");
+    setValue("password", "123456");
+};
 
 
     return (
@@ -82,6 +88,17 @@ const Login = () => {
                                 <span className="error-text">{errors?.password?.message}</span>
                             )}
                         </div>
+
+                        <div className="w-full">
+    <Button
+        variant="outlined"
+        className="w-full mb-2"
+        type="button"
+        onClick={fillDummyCredentials}
+    >
+        Auto Fill Dummy Credentials
+    </Button>
+</div>
                         <div className="w-full">
                             <Button disabled={isLoading}
                                     className={`${isLoading && "capitalize"} w-full flex gap-3 items-center justify-center disabled:cursor-not-allowed`}
