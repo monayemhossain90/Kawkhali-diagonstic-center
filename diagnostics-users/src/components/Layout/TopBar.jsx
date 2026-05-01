@@ -10,7 +10,7 @@ const TopBar = () => {
                   <div className="flex gap-4">
                       <div className="flex gap-2 items-center hidden lg:flex">
                           <AiOutlineMail className="text-xl text-[#236ca2]"/>
-                          <span>kawkhalihealthcare@gmail.com</span>
+                          <span>healthcare@gmail.com</span>
                       </div>
                       <div className="flex gap-2 items-center">
                           <CiLocationOn className="text-xl text-[#236ca2]"/>
@@ -21,7 +21,7 @@ const TopBar = () => {
                   </div>
                   <div>
                       <span className="font-bold mr-3">Call Now :</span>
-                      +880 16003 38284
+                      +8801777-930838
                   </div>
               </div>
           </div>

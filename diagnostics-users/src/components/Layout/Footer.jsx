@@ -26,11 +26,11 @@ const Footer = () => {
                           </li>
                           <li className="flex gap-3 items-center">
                               <IoCallOutline className="text-xl"/>
-                              <span> +8801793837035</span>
+                              <span> +8801777-930838</span>
                           </li>
                           <li className="flex gap-3 items-center">
                               <AiOutlineMail className="text-xl"/>
-                              <span>kawkhalihealthcare@gmail.com</span>
+                              <span>healthcare@gmail.com</span>
                           </li>
                       </div>
                   </div>

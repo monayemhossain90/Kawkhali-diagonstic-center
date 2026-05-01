@@ -37,11 +37,11 @@ const ContactPage = () => {
                                 </li>
                                 <li className="flex gap-5 items-center">
                                     <IoCallOutline className="text-2xl"/>
-                                    <span className="text-[#777777]"> +8801793837035</span>
+                                    <span className="text-[#777777]"> +8801777-930838</span>
                                 </li>
                                 <li className="flex gap-5 items-center">
                                     <AiOutlineMail className="text-2xl"/>
-                                    <span className="text-[#777777]">kawkhalihealthcare@gmail.com</span>
+                                    <span className="text-[#777777]">healthcare@gmail.com</span>
                                 </li>
 
                             </ul>
