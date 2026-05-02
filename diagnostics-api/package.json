@@ -2,9 +2,10 @@
   "name": "diagnostics-api",
   "version": "1.0.0",
   "description": "",
-  "main": "api/index.js",
+  "main": "index.js",
   "scripts": {
-     "dev": "nodemon api/index.js"
+     "dev": "nodemon index.js",
+     "start": "node index.js"
  
   },
   "keywords": [],
