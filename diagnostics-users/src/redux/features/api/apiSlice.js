@@ -33,7 +33,8 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { getToken } from "../../../helper/SessionHelper.js";
 
 const rawBaseQuery = fetchBaseQuery({
-  baseUrl: "http://localhost:5000/api",
+  // baseUrl: "http://localhost:5000/api",
+  baseUrl: "https://kawkhali-diagonstic-center.vercel.app/api",
   prepareHeaders: async (headers, { getState, endpoint }) => {
     if (getToken()) {
       headers.set("token", getToken());
