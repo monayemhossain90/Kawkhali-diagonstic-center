@@ -1,21 +1,18 @@
-const dotenv = require("dotenv");
-dotenv.config();
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
+
+let isConnected = false;
 
 const dbConnect = async () => {
-    try{
-        mongoose.set('strictQuery', false);
-        let uri = process.env.MONGO_URI;
-        //let option = {user:process.env.MONGO_USER, pass:process.env.MONGO_PASS,autoIndex:true};
+    if (isConnected) return;
 
-        await mongoose.connect(uri);
-        console.log("Database connection success")
+    try {
+        const db = await mongoose.connect(process.env.MONGO_URI);
+        isConnected = db.connections[0].readyState;
+        console.log("Database connected");
+    } catch (error) {
+        console.log("DB connection failed", error);
+        throw error;
     }
-    catch(error){
-        console.log("Connection Failed");
-        console.log(error);
-    }
-}
+};
 
-
-module.exports = dbConnect
+module.exports = dbConnect;

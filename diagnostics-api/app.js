@@ -45,9 +45,10 @@ app.use(Limiter);
 
 
 
-
-//MongoDB(mongoose) Atlas Database Connection
-dbConnect();
+app.use(async (req, res, next) => {
+    await dbConnect();
+    next();
+});
 
 
 
