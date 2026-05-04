@@ -1,6 +1,6 @@
 import {FaSignOutAlt} from "react-icons/fa";
 import logo from "../../assets/images/logo.png";
-import {Link, useLocation} from "react-router-dom";
+import {Link, useLocation,useNavigate} from "react-router-dom";
 import {logout} from "../../helper/SessionHelper.js";
 import { navItems } from "../../data/data.js";
 
@@ -8,6 +8,12 @@ import { navItems } from "../../data/data.js";
 const MobileMenu = ({showMenu, setShowMenu}) => {
     const location = useLocation();
     const path = location.pathname;
+     const navigate = useNavigate();
+
+       const handleLogout = () => {
+    logout();
+    navigate("/login", { replace: true });
+  };
 
     return (
       <>
@@ -54,7 +60,7 @@ const MobileMenu = ({showMenu, setShowMenu}) => {
             ))}
 
             <li
-              onClick={() => logout()}
+               onClick={handleLogout}
               className="text-gray-300 text-lg flex items-center gap-x-4 cursor-pointer p-2 hover:bg-light-white rounded-md"
             >
               <FaSignOutAlt size={22} />

@@ -2,7 +2,7 @@ import {useState} from "react";
 import {HiMenuAlt3} from "react-icons/hi";
 import {IoMdClose} from "react-icons/io";
 import MobileMenu from "./MobileMenu.jsx";
-import {Link, useLocation} from "react-router-dom";
+import {Link, useLocation,useNavigate} from "react-router-dom";
 import {getToken, logout} from "../../helper/SessionHelper.js";
 
 
@@ -38,13 +38,17 @@ const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
     const location = useLocation();
     const path = location.pathname;
+    const navigate = useNavigate();
 
 
     const toggleMenu = () => {
         setShowMenu(!showMenu);
     };
 
-    //#236ca2f0
+         const handleLogout = () => {
+    logout();
+    navigate("/login", { replace: true });
+  };
 
 
     return (
@@ -72,7 +76,7 @@ const Navbar = () => {
 
                                {getToken() ? (
                                    <>
-                                       <li onClick={()=>logout()} className={`hover:border-b-4 hover:border-[#24c1e7] px-4 hover:bg-light-white transition-colors duration-500 text-lg h-full grid place-items-center font-medium`}>
+                                       <li onClick={handleLogout} className={`hover:border-b-4 hover:border-[#24c1e7] px-4 hover:bg-light-white transition-colors duration-500 text-lg h-full grid place-items-center font-medium`}>
                                            Logout
                                        </li>
                                    </>

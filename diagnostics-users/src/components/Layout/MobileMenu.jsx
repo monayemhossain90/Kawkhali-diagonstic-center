@@ -1,5 +1,5 @@
 import {FaUserCircle} from "react-icons/fa";
-import {Link, useLocation} from "react-router-dom";
+import {Link, useLocation,useNavigate} from "react-router-dom";
 import {getToken, logout} from "../../helper/SessionHelper.js";
 const NavLinks = [
     {
@@ -33,7 +33,12 @@ const NavLinks = [
 const MobileMenu = ({showMenu}) => {
     const location = useLocation();
     const path = location.pathname;
+     const navigate = useNavigate();
 
+       const handleLogout = () => {
+    logout();
+    navigate("/login", { replace: true });
+  };
     return (
         <>
             <div
@@ -62,7 +67,7 @@ const MobileMenu = ({showMenu}) => {
 
                             {getToken() ? (
                                 <>
-                                    <li onClick={()=>logout()}className={`cursor-pointer pl-3 hover:bg-light-white transition-colors rounded duration-500`}>
+                                    <li onClick={handleLogout} className={`cursor-pointer pl-3 hover:bg-light-white transition-colors rounded duration-500`}>
                                         Logout
                                     </li>
                                 </>
