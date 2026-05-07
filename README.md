@@ -195,7 +195,7 @@ npm run dev
 
  ## Developer
 
-Developed by Monayem Hossain
+Developed by[Monayem](https://www.linkedin.com/in/monayem-hossain/)
 
 Full Stack MERN Developer
 Backend API Developer
