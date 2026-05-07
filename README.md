@@ -1,118 +1,126 @@
-<h1 align="center">
-    Diagnostics Center Management System Application
-</h1>
+<div align="center">
 
-<h3 align="center">
-The Diagnostics Center Management System is a web-based application that helps diagnostic centers automate their daily activities and provide a better digital experience for patients. <br>
+# 🏥 Diagnostics Center Management System
 
-</h3>
+### A Modern Full-Stack MERN Application for Digital Diagnostics Center Management
 
-<p>User Panel = https://kawkhali-diagonstic-center-user.vercel.app/</p>
-<p>Admin Panel = https://kawkhali-diagonstic-center-admin.vercel.app/ </p>
-<p> Server = https://complaint-management-system-isp-emp.vercel.app/</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/MERN-Stack-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Node.js-Backend-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/React-Frontend-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/MongoDB-Database-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge" />
+</p>
 
-<br>
-[LinkedIn](https://www.linkedin.com/in/monayem-hossain/)
+<p align="center">
+  The Diagnostics Center Management System is a powerful web-based platform that helps diagnostic centers automate operations and provide a smooth digital healthcare experience for patients.
+</p>
 
-# About
+</div>
 
-A full-stack Diagnostics Center Management System built using the MERN stack (MongoDB, Express.js, React.js, and Node.js). This platform is designed to simplify and digitize the operations of a modern diagnostic center, allowing patients to book diagnostic tests online while enabling administrators to manage services, appointments, reports, and users efficiently.
+---
 
-## Project Overview
+# 🌐 Live Links
 
-The Diagnostics Center Management System is a web-based application that helps diagnostic centers automate their daily activities and provide a better digital experience for patients.
+| Platform | Live URL |
+|----------|-----------|
+| 👨‍⚕️ User Panel | https://kawkhali-diagonstic-center-user.vercel.app/ |
+| 🛠️ Admin Panel | https://kawkhali-diagonstic-center-admin.vercel.app/ |
+| ⚙️ Backend Server | https://complaint-management-system-isp-emp.vercel.app/ |
 
-Patients can:
+---
 
-1. Browse available diagnostic tests
-2. Book appointments online
-3. Upload required documents
-4. Receive notifications and updates
-5. View booking information securely
+# 👨‍💻 Developer
 
-Administrators can:
+### Monayem Hossain
 
-1. Manage diagnostic services and categories
-2. Manage patient bookings and schedules
-3. Handle user accounts
-4. Upload and manage reports
-5. Monitor system activities
+🔗 LinkedIn:  
+https://www.linkedin.com/in/monayem-hossain/
 
-The system focuses on:
+---
 
-1. Secure authentication
-2. Scalable backend architecture
-3. Fast API performance
-4. Cloud-based image storage
-5. Responsive user experience
+# 📖 About The Project
 
-## Technologies Used
+The **Diagnostics Center Management System** is a complete full-stack healthcare management solution built with the **MERN Stack** (MongoDB, Express.js, React.js, Node.js).
 
-# Frontend: 
-React.js
-Redux Toolkit
-React Router
-Tailwind CSS / Material UI
+This platform helps diagnostics centers digitize and manage their daily operations efficiently. Patients can easily book diagnostic services online, while administrators can manage appointments, services, reports, and users from a centralized dashboard.
 
-# Backend:   
+---
 
-Node.js
-Express.js
-MongoDB
-Mongoose
+# 🚀 Project Features
 
-# Authentication & Security: 
+## 👨‍⚕️ Patient Features
 
-JWT Authentication
-Password Hashing with bcryptjs
-Rate Limiting
-Mongo Sanitize
-Helmet Security
-HPP Protection
+✅ Browse diagnostic services  
+✅ Book appointments online  
+✅ Upload required documents  
+✅ Receive booking updates  
+✅ View appointment details securely  
 
-# Cloud & Deployment: 
+---
 
-Cloudinary (Image Upload & Storage)
-Vercel Deployment
-Environment Variables for Security
+## 🛠️ Admin Features
 
-<br>
+✅ Manage diagnostic services  
+✅ Control categories & pricing  
+✅ Manage patient appointments  
+✅ Upload and manage reports  
+✅ Manage users and system activities  
 
-# Cloud & Deployment:
-  ## User Authentication
-Secure registration and login system
-JWT-based authentication and authorization
-Password encryption using bcryptjs
+---
 
-## Diagnostic Service Management
-Create, update, and delete diagnostic services
-Manage service categories and pricing
-Dynamic service listing APIs
+# 🔐 Authentication & Security
 
- ## Appointment & Booking System
-Online appointment booking
-Booking status management
-Patient information handling
+- JWT Authentication
+- Secure Authorization System
+- Password Hashing using bcryptjs
+- API Rate Limiting
+- MongoDB Query Sanitization
+- Helmet Security Middleware
+- HPP Protection
 
-## Cloudinary Image Upload
-Image upload using Multer memory storage
-Cloudinary integration for cloud-based storage
-Serverless-compatible upload system for Vercel
+---
 
- ## Security Features
-API rate limiting
-MongoDB query sanitization
-Helmet security middleware
-HPP attack protection
+# ☁️ Cloud & Deployment
 
- ## RESTful API Architecture
-Structured REST API implementation
-Modular controller-service architecture
-Scalable and maintainable backend structure
+- Cloudinary Image Upload & Storage
+- Multer Memory Storage
+- Serverless-Compatible Backend
+- Vercel Deployment
+- Environment Variable Security
 
-<br>
+---
 
-├── api/index.js
+# 🧰 Technologies Used
+
+## 🎨 Frontend
+
+| Technology | Purpose |
+|------------|---------|
+| React.js | Frontend UI |
+| Redux Toolkit | State Management |
+| React Router | Routing |
+| Tailwind CSS | Styling |
+| Material UI | UI Components |
+
+---
+
+## ⚙️ Backend
+
+| Technology | Purpose |
+|------------|---------|
+| Node.js | Backend Runtime |
+| Express.js | API Framework |
+| MongoDB | Database |
+| Mongoose | ODM |
+
+---
+
+# 📂 Project Structure
+
+```bash
+├── api/
+│   └── index.js
 ├── controllers/
 ├── services/
 ├── models/
@@ -122,82 +130,202 @@ Scalable and maintainable backend structure
 ├── helper/
 ├── config/
 └── app.js
-
-<br>
-# Installation
-
-```sh
-git clone https://github.com/monayemhossain90/complaint-management-system-ISP
 ```
-Open 4 terminals in separate windows/tabs.
 
-Terminal 1: Setting Up Backend 
-```sh
+---
+
+# 📦 Installation & Setup
+
+## 1️⃣ Clone The Repository
+
+```bash
+git clone https://github.com/monayemhossain90/Kawkhali-diagonstic-center.git
+```
+
+---
+
+# ⚙️ Backend Setup
+
+## Navigate To Backend Folder
+
+```bash
 cd diagnostics-api
-Create a file called .env in the backend folder.
-Inside it write this :
+```
 
-```sh
+---
+
+## Create `.env` File
+
+Inside the backend folder create a `.env` file and add:
+
+```env
 MONGO_URI=[your mongodb uri]
+
 SECRET_KEY=secret@123
 
-# Cloudinary 
+# Cloudinary
 CLOUD_NAME=dr1ge6msw
 API_KEY=885931437661426
 API_SECRET=8igfXZ7gP4uZI1GBEiGppAYDt8A
 
 # SMTP Server
-
-SMTP_USERNAME=[smtp user name]
+SMTP_USERNAME=[smtp username]
 SMTP_PASSWORD=[smtp password]
-SMTP_FROM=[your email for smtp]
-
-
-
+SMTP_FROM=[your email]
 ```
- ## Run Project
+
+---
+
+## Install Dependencies
+
+```bash
 yarn install
+```
 
-In Production Mode
-yarn  start
+---
 
-In Development Mode
+## Run Backend Server
+
+### Development Mode
+
+```bash
 yarn dev
 ```
 
+### Production Mode
 
+```bash
+yarn start
+```
 
-Terminal 2: Setting Up admin panel frontend
-```sh
+---
+
+# 🛠️ Admin Panel Setup
+
+## Navigate To Admin Panel
+
+```bash
 cd diagnostics-admin
-yarn install
+```
 
-Set the backend baseurl  http://localhost:5000/api into   diagnostics-admin panel src>redux>features>api>apiSlice.js
-Then run the admin panel
+## Install Packages
+
+```bash
+yarn install
+```
+
+## Set Backend Base URL
+
+Inside:
+
+```bash
+src/redux/features/api/apiSlice.js
+```
+
+Set:
+
+```bash
+http://localhost:5000/api
+```
+
+## Run Admin Panel
+
+```bash
 npm run dev
 ```
 
+---
 
-Terminal 3: Setting Up diagnostics-user panel 
-```sh
+# 👨‍⚕️ User Panel Setup
+
+## Navigate To User Panel
+
+```bash
 cd diagnostics-users
+```
+
+## Install Packages
+
+```bash
 yarn install
-Set the backend baseurl  http://localhost:5000/api into   diagnostics-user panel src>redux>features>api>apiSlice.js
-Then run the user panel
+```
+
+## Set Backend Base URL
+
+Inside:
+
+```bash
+src/redux/features/api/apiSlice.js
+```
+
+Set:
+
+```bash
+http://localhost:5000/api
+```
+
+## Run User Panel
+
+```bash
 npm run dev
 ```
 
+---
 
+# 📡 REST API Architecture
 
-# Deployment
-* vercel - server side and client side
+✅ Modular Controller-Service Structure  
+✅ Scalable Backend Design  
+✅ RESTful API Implementation  
+✅ Maintainable Project Structure  
+✅ Serverless Deployment Compatible  
 
+---
 
- ## Developer
+# 🖼️ Cloudinary Upload System
 
-Developed by[Monayem](https://www.linkedin.com/in/monayem-hossain/)
+- Image Upload using Multer Memory Storage
+- Cloud-based Image Management
+- Optimized for Vercel Deployment
+- Fast and Secure Upload Process
 
-Full Stack MERN Developer
-Backend API Developer
-Cloud Deployment & Integration
-Software Tester
+---
+
+# 🚀 Deployment
+
+| Platform | Usage |
+|----------|-------|
+| Vercel | Frontend Deployment |
+| Vercel | Backend Deployment |
+| Cloudinary | Image Storage |
+
+---
+
+# 🎯 Future Improvements
+
+- Online Payment Gateway
+- Email Verification
+- SMS Notification System
+- Doctor Management System
+- PDF Report Generation
+- Real-time Notification System
+
+---
+
+# ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub and support the development.
+
+---
+
+# 📜 License
+
+This project is developed for educational and commercial diagnostic center management purposes.
+
+---
+
+<div align="center">
+
+### ❤️ Built with MERN Stack by Monayem Hossain
+
+</div>
